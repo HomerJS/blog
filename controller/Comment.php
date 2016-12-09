@@ -5,7 +5,7 @@ namespace blog;
 //Класс для работы с коментариями
 class Comment extends abstractText {
 
-    private $blog_id;//референс блога, к которму относится комментарий
+    private $blog_id;//референс блога, к которму относится коментарий
 
     public function __construct($array, $conn,$id) {
         $author = $this->isEmpty($array['author']) ? 'Guest' : $array['author'];//проверка на автора. Если автор пустой, ставим гостя
@@ -26,7 +26,7 @@ class Comment extends abstractText {
         ;
     }
 
-    //Выбираем все комментарии для определенного блога
+    //Выбираем все коментарии для определенного блога
     public static function getAll($conn,$id) {
         $stmt = $conn->prepare("select * from comments where ref_blog=? order by date asc");
         $stmt->execute(array($id));
@@ -34,7 +34,7 @@ class Comment extends abstractText {
         return $data;
     }
 
-    //сохраняем комментарий
+    //сохраняем коментарий
       public function addOne() {
          try {
             $sql = "INSERT INTO comments (ref_com,ref_blog, date,author,text) VALUES (?,?,?,?,?);";

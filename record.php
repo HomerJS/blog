@@ -1,11 +1,11 @@
 <?php
 
 //основной файл для работы с конкретной блоговой записью
-//Подключаем хед
+//Подключаем хедер
 require_once 'view/layouts/main.php';
 
 
-//Подключаем все класса
+//Подключаем все классы
 require_once 'controller/absractText.php';
 require_once 'controller/Blog.php';
 require_once 'controller/Comment.php';
@@ -33,7 +33,7 @@ if (isset($_GET['id'])) {
 //получим все комментарии по этому блогу
     $data = blog\Comment::getAll($conn, $blog_id);
 
-    //генерим вьюху на вывод все комментов
+    //генерим вьюху на вывод всех комментов
     require_once 'view/layouts/outAll.php';
 
 

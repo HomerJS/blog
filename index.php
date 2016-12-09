@@ -1,7 +1,7 @@
 <?php
 //основной файл для работы с основной страницей
 
-//Подклбючаем хедер
+//Подключаем хедер
 require_once 'view/layouts/main.php';
 require_once 'view/slide/slide.php'; //подключаем слайдер
 
@@ -13,7 +13,7 @@ require_once 'controller/absractText.php';
 require_once 'controller/Blog.php';
 
 
-//Обработка пост запроса на сохранение блоговой записи
+//Обработка пост запроса на сохранения блоговой записи
 if (@$_POST['send']) {
     $new_blog = new Blog($_POST, $conn);
     $new_blog->addOne();

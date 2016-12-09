@@ -2,7 +2,7 @@
 
 namespace blog;
 
-//класс для работы с блоговыми записсями
+//класс для работы с блоговыми записями
 class Blog extends abstractText {
 
     public function __construct($array, $conn) {

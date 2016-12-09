@@ -1,4 +1,4 @@
-<!--     блог                             -->
+<!--    Вьюха для ввода данных, комментов или блоговой   записи           -->
 <form action="" method="post" onsubmit="return valid()">
 
     <hr>

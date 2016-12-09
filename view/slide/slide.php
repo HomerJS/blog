@@ -1,4 +1,6 @@
 <?php
+//Вывод слайдера
+
 require_once 'controller/absractText.php';
 require_once 'controller/Blog.php';
 ?>

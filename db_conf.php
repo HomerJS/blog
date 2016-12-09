@@ -17,8 +17,8 @@ class db_conf {
 
     private final function Con() { //функция подключения к бд, закрыта, и без возможности изменения
         //
-        $dsn = 'mysql:dbname=blog;host=10.42.3.76';
-        $user = "blog";       //Имя пользователя
+        $dsn = 'mysql:dbname=test;host=localhost';
+        $user = "test";       //Имя пользователя
         $password = 'test';
 
 

@@ -1,14 +1,10 @@
-расспаковка:
-Клонируем все данные как отдельный проект;
+Install:
+Clone project to new directory;
 
 
-Настройка:
-Файлик blog.sql хранит структуру таблиц в Mysql, для хранения и работы с записями; 
-Файлик db_conf.php хранит данные о подключении к бд. Вводите данные согласно вашим настройкам
+Adjust:
+blog.sql - DB structure; 
+db_conf.php - DB connection config.
 
-
-дизайн:
-Чукча не дизайнер
-
-
-Для запуска, открываем файл index.php
+Start:
+Run index.php 
